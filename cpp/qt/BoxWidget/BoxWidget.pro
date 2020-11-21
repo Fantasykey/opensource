@@ -19,4 +19,4 @@ SOURCES += \
     test.cpp
 
 HEADERS += \
-    qboxwidget.h
+    cboxwidget.h

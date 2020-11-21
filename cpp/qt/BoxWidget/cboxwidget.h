@@ -1,14 +1,14 @@
-#ifndef QBOXWIDGET_H
-#define QBOXWIDGET_H
+#ifndef CBOXWIDGET_H
+#define CBOXWIDGET_H
 
 #include <QWidget>
 #include <QHBoxLayout>
 
-class QHBoxWidget : public QWidget
+class CHBoxWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit QHBoxWidget(QWidget *parent = nullptr)
+    explicit CHBoxWidget(QWidget *parent = nullptr)
         : QWidget(parent)
         , m_mainLayout(new QHBoxLayout(this))
     { this->setLayout(m_mainLayout); }
@@ -66,11 +66,11 @@ private:
     QHBoxLayout *m_mainLayout; // root
 };
 
-class QVBoxWidget : public QWidget
+class CVBoxWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit QVBoxWidget(QWidget *parent = nullptr)
+    explicit CVBoxWidget(QWidget *parent = nullptr)
         : QWidget(parent)
         , m_mainLayout(new QVBoxLayout(this))
     { this->setLayout(m_mainLayout); }
@@ -128,11 +128,11 @@ private:
     QVBoxLayout *m_mainLayout; // root
 };
 
-class QGridBoxWidget : public QWidget
+class CGridBoxWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit QGridBoxWidget(QWidget *parent = nullptr)
+    explicit CGridBoxWidget(QWidget *parent = nullptr)
         : QWidget(parent)
         , m_mainLayout(new QGridLayout(this))
     { this->setLayout(m_mainLayout); }
@@ -209,4 +209,4 @@ private:
 };
 
 
-#endif // QBOXWIDGET_H
+#endif // CBOXWIDGET_H

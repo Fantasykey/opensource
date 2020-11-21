@@ -1,6 +1,6 @@
 #include <QApplication>
 
-#include "qboxwidget.h"
+#include "cboxwidget.h"
 #include <QLabel>
 #include <QPushButton>
 #include <QLineEdit>
@@ -8,8 +8,8 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    QGridBoxWidget w;
-    QHBoxWidget hBox(nullptr);
+    CGridBoxWidget w;
+    CHBoxWidget hBox(nullptr);
     hBox.addWidget(new QLabel("Address:"));
     hBox.addWidget(new QLineEdit);
     hBox.addWidget(new QLabel("Write:"));
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     hBox.addWidget(new QLineEdit);
     hBox.show();
 
-    QVBoxWidget vBox(nullptr);
+    CVBoxWidget vBox(nullptr);
     vBox.addWidget(new QLabel("Address:"));
     vBox.addWidget(new QLineEdit);
     vBox.addWidget(new QLabel("Write:"));
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
     vBox.addWidget(new QLineEdit);
     vBox.show();
 
-    QGridBoxWidget gridBox(nullptr);
+    CGridBoxWidget gridBox(nullptr);
     gridBox.addWidget(new QLabel("Address:"), 0, 0);
     gridBox.addWidget(new QLineEdit, 0, 1);
     gridBox.addWidget(new QLabel("Write:"), 0, 2);
