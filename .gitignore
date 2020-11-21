@@ -38,3 +38,6 @@
 
 # Build Directory
 build/
+
+# Batch processes files in windows
+*.bat
